@@ -1,0 +1,18 @@
+
+		 a:link{
+			color:black;		
+			text-decoration: none;
+			font-size: 12px;
+			line-height: 2em;
+		}
+		a:visited{}
+		a:hover{text-decoration: underline;
+				color:#b9f605;
+				}
+		a:active{color: green;}
+		#green{color: green;font-weight: 33; font-size: 14px;}
+		#white{color: white;font-weight: 33; font-size: 14px;
+		}
+		#yellow{color: #fdb306;font-weight: 33; font-size: 14px;}
+	
+
