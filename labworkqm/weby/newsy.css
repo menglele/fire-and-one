@@ -1,0 +1,230 @@
+a:link{text-decoration: none;}
+a:visited{color: black;}
+a:hover{text-decoration: underline;color: #5cacee;}
+a:active{color: #ff0000;}
+#top{
+		background-color: #c1cdcc;
+		width: 1500px;
+		height: 100px;
+		border:  1px;
+	}
+	#logo{
+
+		height: 100px ;
+		border: 1px;
+		position: relative;
+		left: 200px;
+		float: left;
+	}
+	#dao1{
+		position: relative;
+		top: 40px;
+		left: 230px;
+		float: left;
+		font-size: 1.5em;
+		font-family: "楷体";
+		border:  1px;
+
+		}
+		#dz{
+		position: relative;
+		top: 40px;
+		right: 30px;
+		float: right;
+		font-size: 1.5em;
+		font-family: "楷体";
+		border:  1px;
+
+		}
+		#search{
+		border:  1px;
+		width: 280px;
+		height: 50px;
+		float: right;
+		position: relative;
+		top: 22px;
+		right: 30px;
+	}
+	#se1{
+		width: 200px;
+		height: 28px;
+	}
+	#fdj{
+		position: relative;
+		top: 12px;
+		left:-5px;
+	}
+	#top2{
+		width: 1500px;
+		height: 50px;
+		border:  1px;
+		background-color: #a4d3ee;
+	}
+	#dao2{
+		border: 1px;
+		width: 800px;
+		font-size: 1.2em;
+		font-family: "楷体";
+		position: relative;
+		left: 350px;
+		top: 7px;
+	}
+	#mid{
+		border:  1px;
+		width: 1500px;
+		height: 1100px;	
+	}
+	#mid-top1{
+		border:  1px;
+		width: 1500px;
+		height: 370px;
+	}
+	#bz1{
+		border:  1px;
+		width: 801px;
+		height: : 390px;
+		position: relative;
+		left: 55px;
+		top: 15px;
+		float: left;
+	}
+	#bz1-w{
+		width: 390px;
+		height: 300px;
+		border:  1px;
+		color: black;
+		float: right;
+		position: relative;
+		top: 35px;
+		right: 150px;
+		
+
+	}
+	.fi-1{
+		font-size: 2em;
+		font-family: "楷体"; 
+	}
+	.fi-2{
+		font-size: 1.5em;
+		font-family: "楷体"; 
+	}
+	.fi-3{
+		font-size: 2.5em;
+		font-family: "楷体"; 
+	}
+	#mid-top2{
+		border:  1px;
+		width: 1500px;
+		height: 400px;
+	}
+	#bz2{
+		border:  1px;
+		width: 700px;
+		height: : 390px;
+		position: relative;
+		left: 50px;
+		top: 5px;
+		float: left;
+	}
+	#mid-top3{
+		border:  1px;
+		width: 1500px;
+		height: 400px;
+	}
+	#bz3{
+		border:  1px;
+		width: 1000px;
+		height: 300px;
+		position: relative;
+		top: 20px;
+		left: 230px;
+	}
+	#bz3-wen{
+		font-size: 2em;
+		font-family: "楷体"; 
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bot{
+		color: #cccccc;
+		width: 1500px;
+		height: 170px;
+		font-size: 0.9em;
+		font-family: "楷体";
+		border:  1px;
+		background-color: #575757;
+	}
+	#bot-hang{
+		color: #cccccc;
+		width: 1500px;
+		height: 50px;
+		border: 1px;
+	}
+	#bot-hang-zt{
+	
+		width: 800px;
+		border:  1px;
+		font-size: 0.9em;
+		font-family: "楷体";
+		position: relative;top: 15px;
+		left: 400px;
+	}
+	#bot-r{
+		width: 500px;
+		height: 70px;
+		position: relative;
+		top: 10px;
+		left: 525px;
+		border:  1px;
+	}
