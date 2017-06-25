@@ -1,0 +1,364 @@
+#第一章 Web基础知识
+ 1.Web开发基本概念
+	*万维网：是一个由许多互相连接的超文本组成的系统，通过互联网访问。
+	*网页：浏览器中打开的一个页面
+	*网站：一组域名相同的网页的集合
+	*浏览器：显示网页内容，并让用户与这些文件进行交互的一种软件
+	*服务器：（web服务器）通过web服务的计算机
+	*URL：互联网上标准资源的地址，可以从互联网上得到资源的位置的方法
+2.网站访问过程
+	由客户端向web服务器反送URL并收到返回信息
+3.软禁架构分类及各自特征
+	*B/S架构及其特点：
+		·无旋转特定客户端程序，通过URL访问
+		·具有一定的跨平台能力，
+		·无缝升级，客户端免维护
+		·不能直接使用客户端硬件资源，用户体验单一
+	*C/S机构及其特点：
+		·需要安装特定客户端程序
+		·针对不同平台开发不同版本
+		·升级必须重新安装
+		·充分利用客户端硬件资源，构建大型3D效果应用
+4.Web系统开发过程，及其相关知识体系
+	*项目提出》需求分析》（UI、系统）设计》（前端、后端）开发》系统测试》发布/维护
+5.网站类型
+	*主题性质（政府网站、教育科研网站、企业网站、商业网站、个人网站）
+	*功能划分（宣传展示型网站、营销型网站、电子商务、网上购物、门户网站、企业门户）
+6.网站结构
+	*（树形结构，扁平结构）
+7.网站页面
+	*页面分类（主页、列表页、内容页）
+	*页面元素（文字、图片、表单、视频、音频、动画）
+#第二章HTML语言基础
+1.网页与网页文件
+	*网页：浏览器中打开的一个页面
+	*网页文件：浏览器中看到的网页实质
+	*网页与网页文件的关系：浏览器解析网页文件呈现网页
+2.网页页面的组成
+	*内容加结构
+3.HTML简介
+	*语言特点
+	*开发过程
+	*应用领域
+4.HTML基本语法
+	*语法：1有一个开始<html>，有一个结束</html>，成对出现合理嵌套2分别写在文件内容的开始位置和结束位置
+	*语义;表示其中的内容为HTML语言
+	*词汇：<html>
+5.HTML标记分类（单/双标记），HTML属性标记的概念
+	*双标签：由“开始标签”和“结束标签”两部分构成，必须成对使用，且必须合理嵌套
+	*单标签：在开始标签中进行关闭（以开始标签的结束而结束）
+	*HTML标签可以拥有属性。属性提供了标签与移动更多的信息
+	*属性总是以如下的形式出现：name="value
+	*属性总是在开始标签中规定
+	* 不同标记具有不同属性
+6.HTML文档结构
+	*（文档声明、html、head、body、title、meta）
+7.开发工具简介
+	*编辑器：：Sublime Text 3（新建文件，编辑文件，保存等操 作）
+	*浏览器：IE9/10/11、火狐、谷歌（查看网页源文件，开发 者工具）
+#第三章构建页面（一）
+1.网页元素内容包括
+	*文本、图片、列表、表单、视频、音频、动画以及构成网页的各项内容。
+2.在网页中插入文字（文字、实体、注释）
+	*标题<h1>--<h6>
+	*段落<p></p>网页中显示的一段文字
+	*换行<br/>
+	*水平线
+	*实体:用来替换HTML中的预留字符
+	*注释：1、帮助作者记录某些信息 2、帮助作者进行代码调试 3、帮助代码的读者理解代码 4、不在浏览器中显示
+3.在网页中插入列表及相关属性的设置。
+	*有序列表<ol>
+	*无序列表<ul>
+#第四章构建页面（二）
+1.在网页中插入图片及常用相关属性（src、alt）
+	*src : 指明存储图像的位置
+	*alt : 为图片添加替换文本
+2.在网页中设置热区。
+	*热区：在一张图片上定义多个超链接，不同区域应用不同超链接
+	*<map>：包含图像热区的各区域，有id属性和name属性。
+	*id属性和name属性表示名称，设置为相同值，与<img />标签的usemap属性匹配。创建图像与热区之间的关系。
+	*<area>：图像热区中的每一个区域。永远嵌套在map内部。
+	*alt属性：该区域的替代文本
+	*shape属性：该区域的形状（rect、circle、poly）
+	*coords属性：该区域在原始图片上的坐标值
+	*href属性：该区域的链接地址
+
+3.在网页中插入超链接及常用相关属性（href、target）
+	*<a href = "链接目标" > 链接对象 </a>
+	*适合用来制作超链接的内容：导航、列表、推荐图文、友情链接等。
+	*链接目标：另一个网页、图片、文件、应用程序等或者当前网页中的某个部分。
+ 	*必选属性：href，创建指向另一个文档的链接
+	* href：指定链接地址
+  	* target：指定链接的目标窗口
+	*（_blank：在新窗口打开 _self：在当前窗口打开 _parent：在父窗口打开_top：在顶层窗口打开）
+4.锚的应用。
+	*锚点：网页中的某一位置。
+	*锚点链接：在同一个页面跳到指定位置的方式。
+	*创建锚点
+	<a name=“锚点名称”>锚（显示在页面上的文本）</a>
+	*创建指向该锚的连接
+	<a href=“#锚点名称”>……</a>
+
+
+5.相对路径、绝对路径的概念。
+	*从盘符开始的完整路径
+	*优点：硬盘上的真实路径，定位清晰。 
+	*缺点：路径长，容易出错； 如果站点文件夹被移动，就 需要重新修改路径
+	/
+	*相对路径是指由当前文件所在的路径引起的 跟其它文件（或文件夹）的路径关系
+	* 如果文件在同一目录，则只需输入文件的名称
+	* 如果文件在下一级目录，需要输入目录名称， 然后加“/”，再输入文件名
+	* 如果文件在上一级目录，则先输入“../”，再 输入目录名、文件名
+6.在网页中使用内联框架（iframe）。
+	*内联框架：用于在网页内显示另一个网页文件。是浏览器窗口中嵌套的子窗口
+	<iframe>标签的常用属性
+	*src：文件的路径
+	*width： “内联框架”区域的宽度
+	*height：“内联框架”区域的高度
+	*scrolling：规定是否在 iframe 中显示滚动条
+		///No：不出现滚动条  Yes：显示滚动条  Auto：自动出现滚动条
+	*frameBorder：设置是否显示框架的边框。(1，0)
+	*name：框架的名字，用来进行识别
+#第五章 构建页面（三）
+
+1.在网页中插入表格及简单样式修饰
+	*-*词汇(标签)：<table></table> 
+		*语法：1. 成对出现 2. 表的开始和结束位置 
+		*语义：定义一个表格
+	*-*词汇(标签)：<tr></tr> 
+		*语法：1. 成对出现 2. 嵌套于<table></table>标签内 
+		*语义：定义一行 ?
+	*-*词汇(标签)：<th></th> 
+		*语法：1. 成对出现 2. 嵌套于<tr></tr>标签内 
+		*语义：定义表头 ?
+	*词汇(标签)：<td></td> 
+		*语法：1. 成对出现 2. 位于<tr></tr>内 
+		*语义：定义一个单元
+	》width:规定表格元素的宽度（pixels或%）
+	》bgcolor：表格背景颜色
+	》background：表格背景图
+	》align：表格的对齐方式
+2.在网页中插入表单及简单样式修饰
+	表单// 是一个包含表单控件的区域 //允许用户在表单中输入信息的元素//是用户向服务器传输数据的接口
+	*-*<form></form>
+		/*/相关属性： action：规定当提交表单时向何处发送表单数据 值：URL method：规定用于发送 form-data 的 HTTP 方法。 值：get/post
+	*-*文本域
+	*-*密码域
+		<form> 密码： <input type="password" name="password"> </form>
+	*-*复选框
+		<form> <input type="checkbox" name="bike" /> I have a bike <br /> <input type="checkbox" name="bike" /> I have a car </form>
+	*-*单选按钮
+		<form> <input type="radio" name="sex" value="male" /> Male <br /> <input type="radio" name="sex" value= "female" /> Female </form>
+	*-*多行文本域
+	*-*下拉列表
+	*-*按钮
+	*-*表单控件
+		file：
+		<form> <input type="file" name="ding"> </form> 
+#第六章 HTML4.01与HTML5
+1.video与audio。
+	<object>定义一个嵌入的对象比如图像、音频、视频、Java applets、ActiveX、PDF 以及 Flash
+	<embed>?标签定义嵌入的内容，比如插件。
+	**HTML5提供了<audio>标签，以实现插入音频的功能。<audio>插入音频的使用方法在HTML指定位置插入<audio>标签，使用JavaScript控制音频的行为。
+			///<audio src="#" controls="controls"></audio>
+
+2.Canvas基础知识。
+	HTML5提供了<canvas>标签，以实现自定义绘图的功能
+	<canvas>绘图的使用方法
+		*在HTML文档中，添加<canvas>标签
+		*使用JavaScript获取Canvas标签，并绘制图形
+3.HTML样式修饰性标签介绍
+	font；规定文本的字体、字体尺寸、字体颜色
+	strong：用于强调文本
+	b：规定粗体文本
+#第七章 CSS语言基础
+1.为什么使用CSS
+	html针对元素样式设置的属性太少；修改元素样式太麻烦；控制元素样式的代码冗余度过高
+
+2.CSS简介
+	*CSS是 Cascading Style Sheet 的缩写。译作 「层叠样式表」。 是用于(增强)控制网页样式并允许将样式与网页 内容分离的一种标记性语言
+3.CSS的基本语法：
+	选择器 {属性:属性值: 属性:属性值: 属性:属性值: 属性:属性值: 属性:属性值: ....................} 
+4.样式写法
+	*-*1、选择器;2、大括号;3、属性：属性取值（属性之间用 ; 分隔）
+5.选择器
+	//标签选择器——选择器是HTML标签
+	//类选择器——以“.”开头定义的选择符;影响所有以class属性引用该类的标签样式;类名的第一个字符不能使用数字！
+	//id选择器——以“#”开头定义的选择符;影响以id属性引用该选择符的标签样式
+
+6.样式
+	//行内样式——在元素标签内通过style属性添加样式
+	//页内样式——在head部分的style标签内添加样式
+	//外部样式——引用外部建立的.css文件
+#第八章 文本样式和字体样式
+1.CSS字体相关类样式修饰。
+	字体系列：font-family
+	字体大小：font-size
+	字体风格：font-style
+	字体加粗：font-weight
+	字体综合设置：font
+2.CSS文本类样式修饰。
+	文本缩进：text-indent
+	水平对齐：text-align
+	文本修饰：text-decoration
+	文本颜色：color
+	行高：line-height
+#第九章 超链接和伪类and第十章 背景样式和列表样式
+1.CSS超链接的修饰。
+	未被访问的超链接a:link
+	鼠标经过超链接a:hover
+	链接被点击的那一刻a:acitve
+	访问过的超链接a:visited
+	超链接应用
+2.CSS伪元素的使用方法。
+	背景色 background-color
+	背景图像 background-image
+	背景重复 background-repeat
+			body{ background-image: url (image/bg.jpg);
+			 background-repeat:repeat-x; }
+	 背景定位 background-position body{ background-image: url (image/bg.jpg); 			background-repeat:no-repeat;
+			 background-position:center;
+			 height: 500px; }
+	 列表类型 list-style-type
+	ul{
+	list-style-type:square;
+	}
+	列表类型（2） list-style-type
+	ul{
+	list-style-type:none;
+	}
+	 列表标志位置 list-style-position
+		（inside、outside）
+	 列表项图像 list-style-image
+	ul{
+	list-style-image:url(image/arrow.gif);
+	}
+整理///
+1.CSS背景类样式修饰
+	背景色：background-color
+	背景图像：background-image
+	背景重复：background-repeat
+	背景定位：background-position
+	背景综合属性：background
+	CSS列表类样式修饰
+	列表类型：list-style-type
+	列表项图像：list-style-image
+	列表标志位置：list-style-position
+#第十一章盒子结构
+	*盒子在Web中的作用：1内容的容器.2通过盒子与盒子的嵌套、堆叠，控制页面内容的展示位 置（布局）
+	*每个盒子具有的特征：大小（width、height）边框（border）内边距（padding）外边距（margin）
+	*块级元素与行内元素
+?		哪些元素具有盒子模型的特征？ <p></p> <ul></ul>
+	*哪些元素不具有盒子模型的特征？ <a></a>
+	*块级元素（block level element） ? 元素在显示时会独占一行，并同时具有宽、高、内外边距特征。 ? 举例：<p>
+	*行内元素（inline element） ? 在显示时通常不会以新行开始，横向排列，到最右端自动折行。 ? 举例：<a>
+
+	常见的块级元素： 
+	form – 交互表单 
+	h1 – 1级标题 
+	hr – 水平分隔线 	
+	p – 段落 
+	table – 表格 
+	ul – 无序列表
+	常见的行内元素：
+	a – 链接 
+	img – 图片 
+	input – 输入框 
+	select – 项目选择 
+	font – 字体设定 
+	b – 粗体 
+	i – 斜体 
+	strong – 粗体强调
+	*<div></div> 
+	块级元素 
+	作为内容或其他元素的容器 
+		控制元素的大小、边框、位置等 
+		控制内部元素和内容的样式
+	<span></span> 
+	行内元素 
+	作为内容或其他元素的容器 
+	控制内部元素和内容的样式
+	*display属性 
+	用于指定HTML标签的显示方式 
+	属性值：关键字
+·边框：border 用于限定盒子的外围
+	border-top  上边框 
+	border-right  右边框 
+	border-bottom  下边框
+	border-left  左边框
+边框的宽度：border-width
+边框的颜色：border-color
+边框的样式：border-style
+*——*例子：border-top-width:1px;
+	border-right-width:1px;
+	border-bottom-width:1px;
+	border-left-width:1px;
+*——*例子：border-top-style:solid;
+	border-right-style:solid;
+	border-bottom-style:solid;
+	border-left-style:solid;
+
+*-*内边距：padding 用于控制内容部分与边框的间距
+	//padding-top  上间距
+	 padding-right  右间距
+	 padding-bottom  下间距 
+	padding-left  左间距
+*-*外边距：margin 用于控制盒子之间的间距
+	//margin-top  上间隔
+	 margin-right 右间隔
+	 margin-bottom  下间隔 
+	margin-left  左间隔
+···网页布局是指网页内容 在页面上所处位置的设计
+
+·····float
+		none：默认值无浮动
+		left：向父元素左侧紧靠
+		right：向父元素右侧紧靠
+
+	**float应用
+	 1. 浮动元素距离父元素边框的位置，是该侧的父元 素padding+自身margin的值 
+	2. 通常不会超过父元素的边界 
+	3. 元素一旦浮动就不属于父元素了 
+	4. 浮动元素不会相互重叠 
+	5. 不能上下浮动，通常只设一种浮动即可 
+	6. 如果父元素宽度不够，浮动元素会另起一行显示
+
+···溢出处理- overflow 定义溢出元素内容区的内容会如何处理
+	overflow
+	1、父元素不设高度并且子元素浮动时，使父元素高度自 动适应子元素高度。 
+	2、父元素设置的高度或宽度小于子元素时，使父元素出 现相应滚动条或隐藏子元素超出部分内容
+···清除浮动 - clear 用来设置该元素边上没有其他元素可以浮动
+	***clear: left / right / both / none
+	left：不允许左边有浮动的元素 
+	right：不允许右边有浮动的元素 
+	both：不允许左右两边有浮动的元素 
+	none：默认值，可以浮动
+
+··· 绝对定位 position:absolute 
+		1、与left，right，top，bottom等属性共同使用 
+		2、如果父元素未设置position属性，则以浏览器 窗口左上角为起始位置 
+		3、如果父元素设置了position属性，则以父元素 左上角为起始位置
+
+··· 相对定位  position:relative 
+		1、与left，right，top，bottom等属性共同使用
+		 2、以自身本应在的位置为起始位置
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
